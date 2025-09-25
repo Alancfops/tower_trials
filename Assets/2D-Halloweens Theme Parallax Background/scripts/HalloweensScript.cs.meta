@@ -1,0 +1,18 @@
+fileFormatVersion: 2
+guid: c673ba6a4f4483148bc7c2a36e7757ee
+MonoImporter:
+  externalObjects: {}
+  serializedVersion: 2
+  defaultReferences: []
+  executionOrder: 0
+  icon: {instanceID: 0}
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 312268
+  packageName: 2D-Halloweens Theme Parallax Background
+  packageVersion: 1.0
+  assetPath: Assets/2D-Halloweens Theme Parallax Background/scripts/HalloweensScript.cs
+  uploadId: 749376
