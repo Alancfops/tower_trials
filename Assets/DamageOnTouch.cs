@@ -16,11 +16,11 @@ public class DamageOnTouch : MonoBehaviour
 
     void TryHit(Collider2D col)
     {
-        var hp = col.GetComponent<PlayerHealth>();
+        var hp = col.GetComponent<PlayerLife>();
         if (hp == null) return;
 
         // direção do empurrão = do dano para o player
         Vector2 dir = (hp.transform.position - transform.position);
-        hp.TakeDamage(damage, dir);
+        hp.SetHealth(-damage);
     }
 }
