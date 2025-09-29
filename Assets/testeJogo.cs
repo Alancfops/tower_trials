@@ -1,7 +1,7 @@
 using UnityEngine;
 
 [RequireComponent(typeof(Rigidbody2D))]
-public class testeJogo : MonoBehaviour
+public class TesteJogo : MonoBehaviour
 {
     Rigidbody2D rb;
     float inputH;
