@@ -1,0 +1,1066 @@
+fileFormatVersion: 2
+guid: d19b999d7fc107541bf5737eb941c4dc
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: -7476591301660335808
+    second: decoration_tileset_0
+  - first:
+      213: 6222202596887935107
+    second: decoration_tileset_1
+  - first:
+      213: -5633611142960136180
+    second: decoration_tileset_2
+  - first:
+      213: 4699410248702125619
+    second: decoration_tileset_3
+  - first:
+      213: -4809122392464074183
+    second: decoration_tileset_4
+  - first:
+      213: 5070489823171458726
+    second: decoration_tileset_5
+  - first:
+      213: -4454423759778941692
+    second: decoration_tileset_6
+  - first:
+      213: -2745920584074076658
+    second: decoration_tileset_7
+  - first:
+      213: 29598235756804936
+    second: decoration_tileset_8
+  - first:
+      213: -4285882309122880101
+    second: decoration_tileset_9
+  - first:
+      213: -8103138205145089252
+    second: decoration_tileset_10
+  - first:
+      213: 9061148408382947020
+    second: decoration_tileset_11
+  - first:
+      213: -6494068730521208672
+    second: decoration_tileset_12
+  - first:
+      213: -5173305505381518043
+    second: decoration_tileset_13
+  - first:
+      213: -3836634506918337873
+    second: decoration_tileset_14
+  - first:
+      213: 1081536425220720851
+    second: decoration_tileset_15
+  - first:
+      213: -7352059962433772105
+    second: decoration_tileset_16
+  - first:
+      213: 758301654737192379
+    second: decoration_tileset_17
+  - first:
+      213: 3966711945516341308
+    second: decoration_tileset_18
+  - first:
+      213: -577592524940204782
+    second: decoration_tileset_19
+  - first:
+      213: 7695438784668985721
+    second: decoration_tileset_20
+  - first:
+      213: 5543753492698244495
+    second: decoration_tileset_21
+  - first:
+      213: -5245461929533466214
+    second: decoration_tileset_22
+  - first:
+      213: 970752913252802069
+    second: decoration_tileset_23
+  - first:
+      213: -8135618783816331222
+    second: decoration_tileset_24
+  - first:
+      213: -31667102162803824
+    second: decoration_tileset_25
+  - first:
+      213: -4868387337865670686
+    second: decoration_tileset_26
+  - first:
+      213: 1205316068656594771
+    second: decoration_tileset_27
+  - first:
+      213: 6669284567357018068
+    second: decoration_tileset_28
+  - first:
+      213: -5782734491621909400
+    second: decoration_tileset_29
+  - first:
+      213: -1225480286240672863
+    second: decoration_tileset_30
+  - first:
+      213: 8985038001369840788
+    second: decoration_tileset_31
+  - first:
+      213: 8660561483049066321
+    second: decoration_tileset_32
+  - first:
+      213: 6837776799722787285
+    second: decoration_tileset_33
+  - first:
+      213: -6092140525884927569
+    second: decoration_tileset_34
+  - first:
+      213: -3282317513453999146
+    second: decoration_tileset_35
+  externalObjects: {}
+  serializedVersion: 13
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 1
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 4
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Android
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: decoration_tileset_0
+      rect:
+        serializedVersion: 2
+        x: 191
+        y: 95
+        width: 40
+        height: 69
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 041a2c5e2dfcd3890800000000000000
+      internalID: -7476591301660335808
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: decoration_tileset_1
+      rect:
+        serializedVersion: 2
+        x: 319
+        y: 63
+        width: 49
+        height: 110
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 388b4049b44b95650800000000000000
+      internalID: 6222202596887935107
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: decoration_tileset_2
+      rect:
+        serializedVersion: 2
+        x: 383
+        y: 63
+        width: 49
+        height: 110
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c00cd2d738461d1b0800000000000000
+      internalID: -5633611142960136180
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: decoration_tileset_3
+      rect:
+        serializedVersion: 2
+        x: 447
+        y: 95
+        width: 49
+        height: 110
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 33668bff8b8a73140800000000000000
+      internalID: 4699410248702125619
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: decoration_tileset_4
+      rect:
+        serializedVersion: 2
+        x: 511
+        y: 95
+        width: 49
+        height: 110
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 93a5dc3f9a0924db0800000000000000
+      internalID: -4809122392464074183
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: decoration_tileset_5
+      rect:
+        serializedVersion: 2
+        x: 575
+        y: 159
+        width: 10
+        height: 24
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 6a63e5b21affd5640800000000000000
+      internalID: 5070489823171458726
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: decoration_tileset_6
+      rect:
+        serializedVersion: 2
+        x: 607
+        y: 159
+        width: 16
+        height: 21
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 405f057e035be22c0800000000000000
+      internalID: -4454423759778941692
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: decoration_tileset_7
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 127
+        width: 12
+        height: 30
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e0ed4dcf6c784e9d0800000000000000
+      internalID: -2745920584074076658
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: decoration_tileset_8
+      rect:
+        serializedVersion: 2
+        x: 31
+        y: 127
+        width: 58
+        height: 21
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 84b33484077296000800000000000000
+      internalID: 29598235756804936
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: decoration_tileset_9
+      rect:
+        serializedVersion: 2
+        x: 127
+        y: 95
+        width: 49
+        height: 53
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b9d89975fbc7584c0800000000000000
+      internalID: -4285882309122880101
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: decoration_tileset_10
+      rect:
+        serializedVersion: 2
+        x: 255
+        y: 95
+        width: 43
+        height: 61
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c1b3e641cbedb8f80800000000000000
+      internalID: -8103138205145089252
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: decoration_tileset_11
+      rect:
+        serializedVersion: 2
+        x: 575
+        y: 127
+        width: 15
+        height: 22
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ccef2ca287aafbd70800000000000000
+      internalID: 9061148408382947020
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: decoration_tileset_12
+      rect:
+        serializedVersion: 2
+        x: 607
+        y: 127
+        width: 28
+        height: 27
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 0a8bf4a85ee60e5a0800000000000000
+      internalID: -6494068730521208672
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: decoration_tileset_13
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 95
+        width: 21
+        height: 21
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 525792d5d0ab438b0800000000000000
+      internalID: -5173305505381518043
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: decoration_tileset_14
+      rect:
+        serializedVersion: 2
+        x: 31
+        y: 95
+        width: 26
+        height: 9
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: fa2602a4e3981cac0800000000000000
+      internalID: -3836634506918337873
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: decoration_tileset_15
+      rect:
+        serializedVersion: 2
+        x: 63
+        y: 95
+        width: 26
+        height: 9
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3d84de406a3620f00800000000000000
+      internalID: 1081536425220720851
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: decoration_tileset_16
+      rect:
+        serializedVersion: 2
+        x: 95
+        y: 95
+        width: 10
+        height: 25
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 7b563c3ca6c38f990800000000000000
+      internalID: -7352059962433772105
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: decoration_tileset_17
+      rect:
+        serializedVersion: 2
+        x: 575
+        y: 95
+        width: 62
+        height: 21
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: bb5833b5657068a00800000000000000
+      internalID: 758301654737192379
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: decoration_tileset_18
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 63
+        width: 9
+        height: 18
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c38dcc67f779c0730800000000000000
+      internalID: 3966711945516341308
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: decoration_tileset_19
+      rect:
+        serializedVersion: 2
+        x: 63
+        y: 63
+        width: 10
+        height: 21
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 215a406a8aafbf7f0800000000000000
+      internalID: -577592524940204782
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: decoration_tileset_20
+      rect:
+        serializedVersion: 2
+        x: 95
+        y: 63
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 97965fe6dc0bbca60800000000000000
+      internalID: 7695438784668985721
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: decoration_tileset_21
+      rect:
+        serializedVersion: 2
+        x: 127
+        y: 31
+        width: 23
+        height: 46
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f852c96fd6e5fec40800000000000000
+      internalID: 5543753492698244495
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: decoration_tileset_22
+      rect:
+        serializedVersion: 2
+        x: 159
+        y: 0
+        width: 185
+        height: 78
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a99925faa206437b0800000000000000
+      internalID: -5245461929533466214
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: decoration_tileset_23
+      rect:
+        serializedVersion: 2
+        x: 447
+        y: 63
+        width: 71
+        height: 20
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 51edb1f91aec87d00800000000000000
+      internalID: 970752913252802069
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: decoration_tileset_24
+      rect:
+        serializedVersion: 2
+        x: 543
+        y: 63
+        width: 71
+        height: 24
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a20d1aa02d9781f80800000000000000
+      internalID: -8135618783816331222
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: decoration_tileset_25
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 31
+        width: 17
+        height: 21
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 093258830fe7f8ff0800000000000000
+      internalID: -31667102162803824
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: decoration_tileset_26
+      rect:
+        serializedVersion: 2
+        x: 63
+        y: 31
+        width: 12
+        height: 21
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 2efc1819283007cb0800000000000000
+      internalID: -4868387337865670686
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: decoration_tileset_27
+      rect:
+        serializedVersion: 2
+        x: 95
+        y: 0
+        width: 66
+        height: 35
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 35fb85214942ab010800000000000000
+      internalID: 1205316068656594771
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: decoration_tileset_28
+      rect:
+        serializedVersion: 2
+        x: 351
+        y: 0
+        width: 25
+        height: 33
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 4df4f478afe0e8c50800000000000000
+      internalID: 6669284567357018068
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: decoration_tileset_29
+      rect:
+        serializedVersion: 2
+        x: 383
+        y: 0
+        width: 37
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 86c1a7c3e999fbfa0800000000000000
+      internalID: -5782734491621909400
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: decoration_tileset_30
+      rect:
+        serializedVersion: 2
+        x: 511
+        y: 0
+        width: 39
+        height: 55
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 1a3716b2c283efee0800000000000000
+      internalID: -1225480286240672863
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: decoration_tileset_31
+      rect:
+        serializedVersion: 2
+        x: 575
+        y: 0
+        width: 38
+        height: 39
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 49cf80d157441bc70800000000000000
+      internalID: 8985038001369840788
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: decoration_tileset_32
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 0
+        width: 15
+        height: 27
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 15fd19088ce703870800000000000000
+      internalID: 8660561483049066321
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: decoration_tileset_33
+      rect:
+        serializedVersion: 2
+        x: 31
+        y: 0
+        width: 19
+        height: 23
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 5d152e075c9a4ee50800000000000000
+      internalID: 6837776799722787285
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: decoration_tileset_34
+      rect:
+        serializedVersion: 2
+        x: 63
+        y: 0
+        width: 27
+        height: 22
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: fa11ed0287e547ba0800000000000000
+      internalID: -6092140525884927569
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: decoration_tileset_35
+      rect:
+        serializedVersion: 2
+        x: 447
+        y: 0
+        width: 37
+        height: 23
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 6dbe78aac9dd272d0800000000000000
+      internalID: -3282317513453999146
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    customData: 
+    physicsShape: []
+    bones: []
+    spriteID: 
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    spriteCustomMetadata:
+      entries: []
+    nameFileIdTable:
+      decoration_tileset_0: -7476591301660335808
+      decoration_tileset_1: 6222202596887935107
+      decoration_tileset_10: -8103138205145089252
+      decoration_tileset_11: 9061148408382947020
+      decoration_tileset_12: -6494068730521208672
+      decoration_tileset_13: -5173305505381518043
+      decoration_tileset_14: -3836634506918337873
+      decoration_tileset_15: 1081536425220720851
+      decoration_tileset_16: -7352059962433772105
+      decoration_tileset_17: 758301654737192379
+      decoration_tileset_18: 3966711945516341308
+      decoration_tileset_19: -577592524940204782
+      decoration_tileset_2: -5633611142960136180
+      decoration_tileset_20: 7695438784668985721
+      decoration_tileset_21: 5543753492698244495
+      decoration_tileset_22: -5245461929533466214
+      decoration_tileset_23: 970752913252802069
+      decoration_tileset_24: -8135618783816331222
+      decoration_tileset_25: -31667102162803824
+      decoration_tileset_26: -4868387337865670686
+      decoration_tileset_27: 1205316068656594771
+      decoration_tileset_28: 6669284567357018068
+      decoration_tileset_29: -5782734491621909400
+      decoration_tileset_3: 4699410248702125619
+      decoration_tileset_30: -1225480286240672863
+      decoration_tileset_31: 8985038001369840788
+      decoration_tileset_32: 8660561483049066321
+      decoration_tileset_33: 6837776799722787285
+      decoration_tileset_34: -6092140525884927569
+      decoration_tileset_35: -3282317513453999146
+      decoration_tileset_4: -4809122392464074183
+      decoration_tileset_5: 5070489823171458726
+      decoration_tileset_6: -4454423759778941692
+      decoration_tileset_7: -2745920584074076658
+      decoration_tileset_8: 29598235756804936
+      decoration_tileset_9: -4285882309122880101
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
