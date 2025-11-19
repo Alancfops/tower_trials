@@ -14,23 +14,26 @@ public class Inimigo : MonoBehaviour
     [SerializeField] private float velocidade = 2f;
     [SerializeField] private float raioAtaque = 0.9f;
     [SerializeField] private float tempoEntreAtaques = 1.5f;
+    [SerializeField] private float tempoReacao = 3f;
 
-    [Header("Detecção (retangular e direcional)")]
-    [SerializeField] private Vector2 tamanhoDeteccao = new Vector2(8f, 2f); // largura x altura
-    [SerializeField] private float boxOffsetX = 2f;                          // deslocamento à frente
+    [Header("Detecção de Visão")]
+    [SerializeField] private Vector2 tamanhoDeteccao = new Vector2(8f, 2f);
+    [SerializeField] private float boxOffsetX = 2f;
 
     [Header("Verificação de Chão")]
     [SerializeField] private Transform peDoInimigo;
     [SerializeField] private LayerMask layerChao;
 
-    [Header("Referências")]
-    public GameObject ataqueArea; // filho com BoxCollider2D + AtaqueInimigo
+    [Header("Ataque")]
+    public GameObject ataqueArea;
+    [SerializeField] private Transform pontoAtaque;  // 🟢 PONTO DO ATAQUE (NOVO!)
 
     private bool estaNoChao;
     private float proximoAtaque = 0f;
-    private float direcao;        // -1 = esquerda | +1 = direita
+    private float direcao;
     private bool devePerseguir;
-    private float distX;          // distância horizontal ao player
+    private float distX;
+    private float tempoDeEspera;
 
     private readonly int andandoHash  = Animator.StringToHash("andando");
     private readonly int atacandoTrig = Animator.StringToHash("atacando");
@@ -40,10 +43,11 @@ public class Inimigo : MonoBehaviour
         rb = GetComponent<Rigidbody2D>();
 
         var modelo = transform.Find("Modelo");
+
         if (modelo != null)
         {
-            animator = modelo.GetComponent<Animator>();
-            sr       = modelo.GetComponent<SpriteRenderer>();
+            animator = modelo.GetComponentInChildren<Animator>();
+            sr       = modelo.GetComponentInChildren<SpriteRenderer>();
         }
         else
         {
@@ -70,33 +74,32 @@ public class Inimigo : MonoBehaviour
     {
         if (!player) return;
 
-        // Direção que o inimigo deve olhar (com base no X do player)
+        distX = Mathf.Abs(player.position.x - transform.position.x);
+
         direcao = Mathf.Sign(player.position.x - transform.position.x);
+
         if (sr) sr.flipX = direcao < 0f;
 
-        // Checa chão (pequeno círculo nos pés)
         estaNoChao = Physics2D.OverlapCircle(peDoInimigo.position, 0.15f, layerChao);
 
-        // Centro do box de visão, deslocado para a frente do inimigo
-        Vector2 centroVisao = (Vector2)transform.position + new Vector2(boxOffsetX * direcao, 0f);
+        // ====================================
+        //      VISÃO DO INIMIGO (BOX)
+        // ====================================
+        Vector2 centroVisao = 
+            (Vector2)transform.position + new Vector2(boxOffsetX * direcao, 0f);
 
-        // OverlapBoxAll sem filtro de layer; filtramos por Tag depois
         var hits = Physics2D.OverlapBoxAll(centroVisao, tamanhoDeteccao, 0f);
 
         bool playerNaVisao = false;
-        for (int i = 0; i < hits.Length; i++)
+        foreach (var h in hits)
         {
-            if (hits[i].CompareTag("Player"))
+            if (h.CompareTag("Player"))
             {
                 playerNaVisao = true;
                 break;
             }
         }
 
-        // Distância horizontal ao player (evita diagonais enganarem)
-        distX = Mathf.Abs(player.position.x - transform.position.x);
-
-        // ---------- FSM por visão retangular + distância horizontal ----------
         if (!playerNaVisao)
         {
             devePerseguir = false;
@@ -104,13 +107,17 @@ public class Inimigo : MonoBehaviour
             return;
         }
 
-        // Dentro da visão: persegue se fora do alcance, ataca se perto
+        // ====================================
+        //      PERSEGUIR OU ATACAR
+        // ====================================
         if (distX > raioAtaque)
         {
             devePerseguir = true;
             animator.SetBool(andandoHash, true);
+
+            tempoDeEspera = Time.time + tempoReacao;
         }
-        else
+        else if (Time.time >= tempoDeEspera)
         {
             devePerseguir = false;
             animator.SetBool(andandoHash, false);
@@ -119,19 +126,25 @@ public class Inimigo : MonoBehaviour
             {
                 proximoAtaque = Time.time + tempoEntreAtaques;
                 animator.SetTrigger(atacandoTrig);
-                // Debug.Log("Atacando player!");
             }
+        }
+        else
+        {
+            devePerseguir = false;
+            animator.SetBool(andandoHash, false);
         }
     }
 
     void FixedUpdate()
     {
-        // move só quando deve perseguir e está no chão
-        float vx = (devePerseguir && estaNoChao) ? direcao * velocidade : 0f;
-        rb.linearVelocity = new Vector2(vx, rb.linearVelocity.y);   // use velocity para Rigidbody2D
+        float vx = (devePerseguir && estaNoChao)
+            ? direcao * velocidade
+            : 0f;
+
+        rb.linearVelocity = new Vector2(vx, rb.linearVelocity.y);
     }
 
-    // Eventos de animação
+    // EVENTOS DA ANIMAÇÃO
     public void AtivarAtaque()
     {
         estaAtacando = true;
@@ -144,28 +157,25 @@ public class Inimigo : MonoBehaviour
         if (ataqueArea) ataqueArea.SetActive(false);
     }
 
-    // Gizmos para ajustar o box de visão no editor
+    // GIZMOS — Raio de ataque agora usa pontoAtaque
     void OnDrawGizmosSelected()
     {
-        // Direção para desenhar o box no editor
-        float dir = 1f;
-        if (Application.isPlaying)
-            dir = Mathf.Sign((player ? player.position.x : transform.position.x) - transform.position.x);
-        else if (sr != null)
-            dir = sr.flipX ? -1f : 1f;
+        Gizmos.color = Color.red;
 
-        Vector3 centro = transform.position + new Vector3(boxOffsetX * dir, 0f, 0f);
+        if (pontoAtaque != null)
+            Gizmos.DrawWireSphere(pontoAtaque.position, raioAtaque);
+        else
+            Gizmos.DrawWireSphere(transform.position, raioAtaque);
+
+        float dir = 1f;
+
+        if (Application.isPlaying && player != null)
+            dir = Mathf.Sign(player.position.x - transform.position.x);
+
+        Vector3 centroVisao =
+            transform.position + new Vector3(boxOffsetX * dir, 0f, 0f);
 
         Gizmos.color = Color.cyan;
-        Gizmos.DrawWireCube(centro, new Vector3(tamanhoDeteccao.x, tamanhoDeteccao.y, 0f));
-
-        Gizmos.color = Color.red;
-        Gizmos.DrawWireSphere(transform.position, raioAtaque);
-
-        if (peDoInimigo)
-        {
-            Gizmos.color = Color.green;
-            Gizmos.DrawWireSphere(peDoInimigo.position, 0.15f);
-        }
+        Gizmos.DrawWireCube(centroVisao, tamanhoDeteccao);
     }
 }

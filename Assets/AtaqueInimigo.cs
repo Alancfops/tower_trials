@@ -2,23 +2,32 @@ using UnityEngine;
 
 public class AtaqueInimigo : MonoBehaviour
 {
-    public int dano = 1;
+    public int dano = 2; // Inimigo maior bate 2
     private Inimigo inimigo;
+    private InimigoMenor inimigoMenor; 
     private bool jaCausouDano;
 
     void Awake()
     {
         inimigo = GetComponentInParent<Inimigo>();
+        inimigoMenor = GetComponentInParent<InimigoMenor>();
     }
 
     void OnEnable()
     {
-        jaCausouDano = false; // reset a cada ataque
+        jaCausouDano = false;
+
+        if (inimigoMenor != null)
+        {
+            dano = 1; // Inimigo menor bate 1
+        }
     }
 
     private void OnTriggerEnter2D(Collider2D other)
     {
-        if (!inimigo.estaAtacando || jaCausouDano) return;
+        if ((inimigo != null && !inimigo.estaAtacando) ||
+            (inimigoMenor != null && !inimigoMenor.estaAtacando) ||
+            jaCausouDano) return;
 
         if (other.CompareTag("Player"))
         {
@@ -27,7 +36,7 @@ public class AtaqueInimigo : MonoBehaviour
             {
                 player.SetHealth(-dano);
                 jaCausouDano = true;
-                Debug.Log("💥 Player atingido pelo golpe do inimigo!");
+                Debug.Log($"💥 Dano causado: {dano}");
             }
         }
     }

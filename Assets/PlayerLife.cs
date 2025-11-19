@@ -13,7 +13,7 @@ public class PlayerLife : MonoBehaviour
     public GameObject deathText;   
 
     [Header("Configuração de Vida")]
-    public int maxLife = 5;
+    public int maxLife = 10;
     public int currentLife;
 
     [Header("Invulnerabilidade")]
