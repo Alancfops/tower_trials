@@ -2,6 +2,7 @@ using System.Collections;
 using UnityEngine;
 using UnityEngine.UI;
 using UnityEngine.SceneManagement;
+using TMPro;   
 
 public class PlayerLife : MonoBehaviour
 {
@@ -10,7 +11,9 @@ public class PlayerLife : MonoBehaviour
     public Image greenbar;
     public Image redbar;
     public Image fadePanel;
-    public GameObject deathText;   
+    public GameObject deathText;
+
+    public TMP_Text lifeText;
 
     [Header("Configuração de Vida")]
     public int maxLife = 10;
@@ -25,6 +28,9 @@ public class PlayerLife : MonoBehaviour
     private Coroutine redRoutine;
     private Coroutine blinkRoutine;
 
+    private Animator anim;
+    private readonly int morteTrigger = Animator.StringToHash("morrendo");
+
     void Awake()
     {
         sr = GetComponent<SpriteRenderer>();
@@ -35,15 +41,18 @@ public class PlayerLife : MonoBehaviour
         currentLife = maxLife;
         UpdateBars(1f);
 
+        if (lifeText != null)
+            lifeText.text = currentLife.ToString();
+
         if (fadePanel != null)
         {
             Color c = fadePanel.color;
-            fadePanel.color = new Color(c.r, c.g, c.b, 0f); // começa transparente
+            fadePanel.color = new Color(c.r, c.g, c.b, 0f);
             fadePanel.gameObject.SetActive(true);
         }
 
         if (deathText != null)
-            deathText.SetActive(false); // texto começa escondido
+            deathText.SetActive(false);
     }
 
     public void SetHealth(int amount)
@@ -52,6 +61,9 @@ public class PlayerLife : MonoBehaviour
 
         currentLife = Mathf.Clamp(currentLife + amount, 0, maxLife);
         float ratio = (float)currentLife / maxLife;
+
+        if (lifeText != null)
+            lifeText.text = currentLife.ToString();
 
         SetGreen(ratio);
 
@@ -139,11 +151,12 @@ public class PlayerLife : MonoBehaviour
                 fadePanel.color = new Color(baseC.r, baseC.g, baseC.b, a);
                 yield return null;
             }
+
             fadePanel.color = new Color(baseC.r, baseC.g, baseC.b, 1f);
         }
 
         if (deathText != null)
-            deathText.SetActive(true); // mostra o texto no meio da tela
+            deathText.SetActive(true);
 
         yield return new WaitForSeconds(1.5f);
         SceneManager.LoadScene(SceneManager.GetActiveScene().name);

@@ -26,7 +26,7 @@ public class Inimigo : MonoBehaviour
 
     [Header("Ataque")]
     public GameObject ataqueArea;
-    [SerializeField] private Transform pontoAtaque;  // 🟢 PONTO DO ATAQUE (NOVO!)
+    [SerializeField] private Transform pontoAtaque;  
 
     private bool estaNoChao;
     private float proximoAtaque = 0f;
